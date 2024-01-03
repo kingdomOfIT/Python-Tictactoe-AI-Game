@@ -2,6 +2,7 @@ import sys
 import pygame
 from constans import *
 import numpy as np
+import random
 
 #PYGAME SETUP
 pygame.init()
@@ -13,8 +14,8 @@ class Board:
 
     def __init__(self):
         self.squares = np.zeros( (ROWS, COLS) )
-        self.empty_sqr = self.squares #[squares]
-        self.mark_sqr = 0
+        self.empty_sqrs = self.squares #[squares]
+        self.marked_sqr = 0
 
     def final_state(self):
         """
@@ -46,7 +47,7 @@ class Board:
 
     def mark_sqr(self, row, col, player):
         self.squares[row][col] = player
-        self.mark_sqr += 1
+        self.marked_sqr += 1
 
     def empty_sqr(self, row, col):
         return self.squares[row][col] == 0
@@ -61,18 +62,37 @@ class Board:
         return empty_sqrs
     
     def isfull(self):
-        return self.mark_sqr == 9
+        return self.marked_sqr == 9
     
     def isempty(self):
-        return self.mark_sqr == 0
+        return self.marked_sqr == 0
 
+class AI: 
+    def __init__(self, level=0, player=2):
+        self.level = level
+        self.player = player
+
+    def rnd(self, board):
+        empty_sqrs = board.get_empty_sqrs()
+        index = random.randrange(0, len(empty_sqrs))
+
+        return empty_sqrs[index] #returning #row, col
+
+    def eval(self, main_board):
+        if self.level == 0:
+            move = self.rnd(main_board)
+
+        else:
+            pass
+
+        return move
 class Game: 
 
     def __init__(self):
         self.board = Board()
-        # self.ai = AI()
+        self.ai = AI()
         self.player = 1 # 1-cross #2-circles
-        self.gamemode = 'pvp' # or ai
+        self.gamemode = 'ai' # or ai
         self.running = True
         self.show_lines()
 
@@ -113,10 +133,12 @@ def main():
 
     game = Game()
     board = game.board
+    ai = game.ai
 
     # This is mainloop
     while True:
         for event in pygame.event.get():
+
             if event.type == pygame.QUIT:
                 pygame.quit()
                 sys.exit()
@@ -131,7 +153,18 @@ def main():
                     game.draw_fig(row, col)
                     game.next_turn()
 
-                    # print(board.squares)
+                    print(board.squares)
+
+        if game.gamemode == 'ai' and game.player == ai.player:
+            pygame.display.update()
+
+            #ai method
+            row, col = ai.eval(board)
+
+            board.mark_sqr(row, col, ai.player)
+            game.draw_fig(row, col)
+            game.next_turn()
+
         
         pygame.display.update()
 
