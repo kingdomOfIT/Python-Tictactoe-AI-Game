@@ -1,7 +1,7 @@
 <div align="center">
-  <br />
+  <!-- <br />
     <img src="https://github.com/adrianhajdin/social_media_app/assets/151519281/be514a19-3cbb-48b7-9acd-2cf4d2e319c4" alt="Project Banner">
-  <br />
+  <br /> -->
   <div>
     <img src="https://img.shields.io/badge/-Python-black?style=for-the-badge&logoColor=white&logo=python&color=4584b6" alt="python" />
   </div>
@@ -19,6 +19,7 @@
 2. ⚙️ [Tech Stack](#tech-stack)
 3. 🔋 [Features](#features)
 4. 🤸 [Quick Start](#quick-start)
+5. 🚀 [More](#more)
 
 
 ## <a name="introduction">🤖 Introduction</a>
@@ -83,6 +84,7 @@ pip install -r requirements.txt
 ```bash
 python tictactoe.py
 ```
+<br />
 
 Choose your game mode using the following keys:
 
@@ -96,12 +98,16 @@ In Player vs AI mode, wait for your turn and watch the AI make its move.
 
 Press 'r' at any time to reset the game and start a new match.
 
+<br />
+
 **Adjusting AI Difficulty**
 
 Press '0' for random AI moves or '1' for minimax algorithm-based moves.
 
 Enjoy the game and have fun playing Tic Tac Toe against friends or challenging the AI!
 
+
+## <a name="more">🚀 More</a>
 
 **Explore More Projects**
 
