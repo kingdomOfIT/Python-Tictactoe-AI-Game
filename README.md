@@ -94,6 +94,8 @@ Make moves as follows:
 In Player vs Player mode, take turns marking the board with your symbol.
 In Player vs AI mode, wait for your turn and watch the AI make its move.
 
+<br />
+
 **Restarting the Game**
 
 Press 'r' at any time to reset the game and start a new match.
@@ -118,6 +120,8 @@ Check out my other projects on GitHub to discover more exciting creations!
 <a href="https://github.com/kingdomOfIT" target="_blank">
 🚀 Visit My GitHub
 </a>
+
+<br />
 
 **Visit My Website**
 
