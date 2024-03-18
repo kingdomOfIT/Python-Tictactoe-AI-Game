@@ -1,7 +1,7 @@
 <div align="center">
-  <!-- <br />
-    <img src="https://github.com/adrianhajdin/social_media_app/assets/151519281/be514a19-3cbb-48b7-9acd-2cf4d2e319c4" alt="Project Banner">
-  <br /> -->
+  <br />
+    <img src="https://github.com/kingdomOfIT/Python-Tictactoe-AI-Game/blob/main/media/img/CoverImage.png" alt="Project Banner">
+  <br />
   <div>
     <img src="https://img.shields.io/badge/-Python-black?style=for-the-badge&logoColor=white&logo=python&color=4584b6" alt="python" />
   </div>
@@ -111,25 +111,11 @@ Enjoy the game and have fun playing Tic Tac Toe against friends or challenging t
 
 ## <a name="more">🚀 More</a>
 
-**Explore More Projects**
+**Explore other projects or visit website**
 
-Check out my other projects on GitHub to discover more exciting creations!
+Check out my other projects on <a href="https://github.com/kingdomOfIT" target="_blank">GitHub</a> to discover more exciting creations!
 
-🌟 Explore Projects
-
-<a href="https://github.com/kingdomOfIT" target="_blank">
-🚀 Visit My GitHub
-</a>
-
-<br />
-
-**Visit My Website**
-
-🚀 Explore more of my work and stay updated with the latest projects on my website.
-
-<a href="https:/amirkahriman.com" target="_blank">
-🚀 Visit My Website
-</a>
+🚀 Explore more of my work and stay updated with the latest projects on my <a href="https://amirkahriman.com" target="_blank">website</a>.
 
 Thank you for visiting! Don't forget to star ⭐ this repository if you found it useful or interesting.
 
